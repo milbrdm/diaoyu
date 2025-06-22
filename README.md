@@ -3,7 +3,8 @@
 This repository contains a Django project skeleton with a backend management interface using Tabler UI.
 
 ## Setup
-1. Install Django (`pip install django`).
+1. Install Django and [django-simpleui](https://github.com/newpanjing/simpleui)
+   (``pip install django django-simpleui``).
 2. Run migrations:
    ```
    python manage.py migrate
@@ -18,4 +19,6 @@ This repository contains a Django project skeleton with a backend management int
    ```
 
 ## Templates and UI
-Templates under `core/templates/` extend `base.html`, which loads Tabler CSS and JS from CDN. Replace with local assets as needed.
+Templates under `core/templates/` extend `base.html`, which loads Tabler CSS and
+JS from CDN. The Django admin uses `django-simpleui` for a cleaner look.
+Replace the CDN links with local assets as needed.
