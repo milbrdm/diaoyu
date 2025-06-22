@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}System Settings{% endblock %}
+{% block content %}
+<h1>System Settings</h1>
+<ul>
+    {% for s in settings %}
+    <li>{{ s.key }} - {{ s.value }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

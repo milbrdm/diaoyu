@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Admin{% endblock %}</title>
+    <!-- Tabler CSS -->
+    <link href="https://unpkg.com/@tabler/core@1.0.0-beta16/dist/css/tabler.min.css" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="layout-fluid">
+    <div class="page">
+        <header class="navbar navbar-expand-md d-print-none">
+            <div class="container-xl">
+                <a class="navbar-brand" href="/">Dashboard</a>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            <div class="container-xl">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@tabler/core@1.0.0-beta16/dist/js/tabler.min.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

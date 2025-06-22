@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Data Center{% endblock %}
+{% block content %}
+<h1>Data Center</h1>
+<ul>
+    {% for item in workorders %}
+    <li>{{ item.title }} - {{ item.status }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

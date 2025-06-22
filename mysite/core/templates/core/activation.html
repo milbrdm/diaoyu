@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Activation{% endblock %}
+{% block content %}
+<h1>Activation</h1>
+<ul>
+    {% for l in licenses %}
+    <li>{{ l.code }} - expires {{ l.expires_at }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

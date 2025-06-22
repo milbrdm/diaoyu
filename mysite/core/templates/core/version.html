@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Version{% endblock %}
+{% block content %}
+<h1>Version</h1>
+<ul>
+    {% for v in versions %}
+    <li>{{ v.version }} - {{ v.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
